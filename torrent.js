@@ -14,6 +14,7 @@ async function search(text, category) {
     console.log('Searching for', text, 'in', category + '...')
     const torrents = await TorrentSearchApi.search(text, category, 20)
     // List all torrents
+    console.log('Torrents found', torrents.length)
     torrents.forEach(function (val, index, array) {
         console.log(index + ': ' + JSON.stringify(val, null, 2))
     })
