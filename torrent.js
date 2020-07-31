@@ -7,7 +7,8 @@ process.argv.forEach(function (val, index, array) {
 const TorrentSearchApi = require('torrent-search-api')
 
 //TorrentSearchApi.enablePublicProviders()
-TorrentSearchApi.enableProvider('1337x')
+//TorrentSearchApi.enableProvider('1337x')
+TorrentSearchApi.enableProvider('rarbg')
 
 async function search(text, category) {
     // Available categories: ['All', 'Movies', 'TV', 'Music', 'Apps', 'Books', 'Top100']
